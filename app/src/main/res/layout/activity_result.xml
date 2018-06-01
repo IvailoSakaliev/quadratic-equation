@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ivo.quadratic_equation.Result">
+
+    <Button
+        android:id="@+id/btnNewSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:text="New" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="177dp"
+        android:layout_toStartOf="@+id/btnNewSum"
+        android:text="D = "
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="15dp"
+        android:text="X1 ="
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="12dp"
+        android:text="X2 ="
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:maxLength="10"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textX1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toEndOf="@+id/textD"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textX1"
+        android:layout_alignTop="@+id/textView4"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/kvadratno" />
+
+</RelativeLayout>

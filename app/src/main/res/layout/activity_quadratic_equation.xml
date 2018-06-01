@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ivo.quadratic_equation.quadratic_equation">
+
+
+    <TextView
+        android:id="@+id/textA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="157dp"
+        android:textSize="30dp"
+        android:text="A = " />
+
+    <TextView
+        android:id="@+id/textB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textA"
+        android:layout_below="@+id/inputA"
+        android:textSize="30dp"
+        android:text="B =" />
+
+    <EditText
+        android:id="@+id/inputA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textA"
+        android:layout_marginStart="44dp"
+        android:layout_toEndOf="@+id/textA"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <EditText
+        android:id="@+id/inputB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/inputA"
+        android:layout_below="@+id/inputA"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"/>
+
+    <EditText
+        android:id="@+id/inputC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/inputB"
+        android:layout_below="@+id/inputB"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"/>
+
+    <TextView
+        android:id="@+id/textC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textB"
+        android:layout_below="@+id/inputB"
+        android:textSize="30dp"
+        android:text="C = " />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inputA"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/kvadratno" />
+
+    <Button
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/inputC"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="19dp"
+        android:text="Sum" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textC"
+        android:layout_alignTop="@+id/sum"
+        android:onClick="GettAllScore"
+        android:text="Story" />
+
+</RelativeLayout>
