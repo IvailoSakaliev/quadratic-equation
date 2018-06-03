@@ -20,14 +20,14 @@ public class quadratic_equation extends AppCompatActivity {
     public static EditText textB;
     public static EditText textC;
     private Button btnSum;
-    private Database db;
+    private Repository repo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quadratic_equation);
 
-        db = new Database(this);
+        repo = new Repository(this);
         setActions();
 
         btnSum.setOnClickListener(new View.OnClickListener() {
@@ -71,7 +71,7 @@ public class quadratic_equation extends AppCompatActivity {
     }
     public void GettAllScore(View v)
     {
-        Cursor res = db.getAllData();
+        Cursor res = repo.getAllData();
         if(res.getCount() == 0) {
             showMessage("Error","Nothing found");
             return;

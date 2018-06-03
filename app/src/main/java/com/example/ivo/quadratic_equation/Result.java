@@ -31,7 +31,7 @@ public class Result extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         db = new Database(this);
-        setAvtions();
+        setActions();
         Sum();
         updateScreen();
         AddDataInDB();
@@ -57,7 +57,7 @@ public class Result extends AppCompatActivity {
        }
     }
 
-    private void setAvtions() {
+    private void setActions() {
         textD = (TextView)findViewById(R.id.textD);
         textX1 = (TextView)findViewById(R.id.textX1);
         textX2 = (TextView)findViewById(R.id.textX2);
